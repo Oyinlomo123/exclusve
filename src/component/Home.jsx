@@ -1,6 +1,6 @@
 import Categories from "../reuseable/Categories"
 import Flash from "../reuseable/Flash"
-import Hero from "../reuseable/hero"
+import Hero from "../reuseable/Hero"
 import Jbl from "../reuseable/Jbl"
 import MonthProd from "../reuseable/MonthProd"
 const Home = () => {
