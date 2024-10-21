@@ -6,13 +6,12 @@ import Footer from "./sticky/Footer"
 function App() {
 
   return (
-    
-    <Router>
+    <>
       <Nav/>
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-  </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
   )
 }
 
