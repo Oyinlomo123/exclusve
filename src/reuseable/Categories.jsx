@@ -1,8 +1,7 @@
 import items from "./items"
 import Categ from "./Categ"
 
-const Category = () => {
-
+const Categories = () => {
   return (
     <div>
       <div>
@@ -35,4 +34,4 @@ const Category = () => {
   )
 }
 
-export default Category
+export default Categories
