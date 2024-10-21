@@ -1,4 +1,4 @@
-import gamepad from "../assets/gamepad.PNG"
+
 
 const Card = (props) => {
   return (
