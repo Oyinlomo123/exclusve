@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
-import Home from "../component/Home"
+import{useCart} from "react-use-cart"
 
-const Nav = () => {
+
+const Nav = ({size}) => {
   return (
     <header>
       <nav className="">
@@ -17,8 +18,10 @@ const Nav = () => {
         <input type="search" name="" id="" placeholder="what are you looking for " ></input>
         <i className="ri-search-line"></i>
         </div>
-        <i className="ri-heart-3-line"></i>
-        <i className="ri-shopping-cart-2-line"></i>
+        <span><i className="ri-heart-3-line"></i></span>
+        <span className="icon">
+          <Link><i className="ri-shopping-cart-2-line"><sup>{size}</sup></i></Link>
+        </span> 
         </div>
       </nav>
     </header>

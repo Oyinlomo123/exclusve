@@ -12,7 +12,9 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0"
+    "react-filter-search": "^1.1.11",
+    "react-router-dom": "^6.27.0",
+    "react-use-cart": "^1.14.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 import items from './items'
 
-const Flash = () => {
+const Flash = ({handleClick}) => {
   
   return (
     <div>
@@ -43,7 +43,7 @@ const Flash = () => {
          <div className='items'>
           {items.productData.map((item,index) => {
             return(
-              <Card img={item.img} title={item.title} price={item.price} discount={item.discount} key={index}/>
+              <Card img={item.img} title={item.title} price={item.price} discount={item.discount} handleClick={handleClick} key={index}/>
             )
           }
           )

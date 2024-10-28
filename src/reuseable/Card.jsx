@@ -1,6 +1,7 @@
+import items from "./items"
 
 
-const Card = (props) => {
+const Card = (props, handleClick) => {
   return (
     <div>
       <div className="card">
@@ -17,6 +18,7 @@ const Card = (props) => {
         <i className="ri-star-s-fill"></i>
         (86)
         </h4>
+        <button onClick={()=>handleClick(props)}>add to cart</button>
       </div>
     </div>
   )

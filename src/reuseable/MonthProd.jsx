@@ -1,6 +1,6 @@
 import items from "./items"
 import Card from "./Card"
-const MonthProd = () => {
+const MonthProd = ({handleClick}) => {
   return (
     <div>
       <div className='today'>
@@ -16,9 +16,10 @@ const MonthProd = () => {
           
          </div>
          <div className='items mth'>
-          {items.monthData.map((item,index) => {
+          {
+          items.monthData.map((item,index) => {
             return(
-              <Card img={item.img} title={item.title} price={item.price} discount={item.discount} key={index}/>
+              <Card img={item.img} title={item.title} price={item.price} discount={item.discount} handleClick={handleClick} key={index}/>
             )
           }
           )

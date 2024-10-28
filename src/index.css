@@ -4,6 +4,9 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+.body{
+  padding: 5rem;
+}
 nav{
   display: flex;
   justify-content: space-around;
@@ -38,7 +41,21 @@ nav ul a:hover:active{
     i{
       font-size: 18px;
     }
-  }
+     }
+    .icon a{
+        text-decoration: none;
+        color: #000;
+        sup{
+          background-color: red;
+          border-radius: 10px;
+          padding:0 2px;
+          font-weight: 400;
+          font-size: 10px;
+          color: white;
+          margin-left: -10px;
+        }
+    }
+ 
   input{
     border: none;
     background: none;
@@ -159,20 +176,16 @@ font-size: 18px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
   gap: 5px;
 }
 .categ{
-  width:180px;
   text-align: center;
   border: 1px solid black;
-  
   padding: 10px;
   img{ 
     height: 100px;
     padding: 20px;
   }
-
 }
 .btn{
   button{
@@ -186,9 +199,14 @@ font-size: 18px;
 .jbl{
   background-color: #000;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 .hour{
-  background: blue;
+  background: white;
+  color: #000;
   text-align: center;
   border-radius: 100px;
   font-size: 12px;
@@ -196,4 +214,146 @@ font-size: 18px;
 }
 .days{
   display: flex;
+  gap: 20px;
+}
+.jbl-img{
+  img{
+  flex-shrink: 1;
+    max-height: 400px;
+    filter: drop-shadow(20px 20px 70px rgba(214, 212, 212, 0.6));
+  }
+}
+.jbl-text{
+  padding: 50px;
+  text-wrap: wrap;
+ h4{
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(13, 228, 13);
+}
+ h1{
+  font-size:4rem;
+  padding: 20px 0;
+ }
+ button{
+ font-size: 18px;
+ padding: 10px 40px;
+ background: rgb(13, 228, 13);
+ border: none;
+ color: white;
+ margin-top: 20px;
+ }
+}
+.enhance img{
+  width:100%;
+}
+
+/*delivery*/
+.delivery{
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  i{
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+  }
+  h3{
+   padding: 20px 0 10px 0;
+  }
+}
+.exclus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #000;
+  color: white;
+  align-items: start;
+  
+  text-wrap: wrap;
+  padding: 3rem;
+  input{
+    background: none;
+    color: white;
+    border: 1px solid grey;
+    padding: 8px;
+  }
+  h1{
+    font-weight: 400;
+    padding-bottom: 12px;
+  }
+  h3{
+    font-weight: 400;
+    padding-bottom: 24px;
+  }
+  h5{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 12px;
+  }
+  h6{
+    font-weight: 300;
+  }
+}
+
+
+@media (max-width: 800px) {
+  nav{
+    display: none;
+  }
+  .body{
+    padding: 1rem;
+  }
+  .hero{
+    display:block;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    ul{
+      border-right: 0px solid gray;
+      padding-top: 25px;
+      padding-right:2rem ;
+      padding-bottom: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  .img{
+    padding-top: 31px;
+    width: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      
+    }
+  }
+  .exclus{
+    gap: 30px;
+  }
+  .sales{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  .flashsale{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .items{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
 }
